@@ -8,6 +8,7 @@
 
             <div v-else >
                 <h1>Salut {{login}}</h1>
+                <input type="button" @click="deconnexion" value="Déconnexion">
             </div>
 
     </div>
@@ -31,6 +32,10 @@ export default {
         console.log("je suis connecté");
       }
     },
+    deconnexion: function() {
+        this.isConnected = false
+        this.$cookie.delete('logged-in')
+    }
   },
 };
 </script>
