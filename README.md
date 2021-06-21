@@ -1,5 +1,6 @@
-# myproject
+# basic-vue-app
 
+The goal of this app is to learn basic vue.js app architecture using the vue-cli
 ## Project setup
 ```
 npm install
